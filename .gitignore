@@ -1,5 +1,6 @@
 # Local production workspace (never commit)
 local/
+**/local/
 
 # Runtime caches and OS metadata
 __pycache__/
@@ -38,3 +39,15 @@ __pycache__/
 # Generated script conversions and reports
 *-海洋风转换.txt
 *-修改总结.md
+
+# Generated numbered storyboard variants
+*_1.txt
+*_2.txt
+*_3.txt
+*_4.txt
+*_5.txt
+*_6.txt
+*_7.txt
+*_8.txt
+*_9.txt
+*_10.txt

@@ -1,0 +1,4 @@
+interface:
+  display_name: "剧本多版本"
+  short_description: "继承原剧本风格，生成版本间差异且版本内连续一致的分镜文件"
+  default_prompt: "使用 $generate-storyboard-variants 将这份剧本生成指定数量的连续一致版本。"

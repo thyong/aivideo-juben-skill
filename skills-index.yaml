@@ -1,0 +1,16 @@
+version: 1
+skills:
+  - name: "translate-ocean-video-prompts"
+    command: "海洋风转换"
+    path: "skills/translate-ocean-video-prompts"
+    input: "一份TKDRAMA或相似结构的中文剧本.txt"
+    output: "一份海洋风转换.txt与一份修改总结.md"
+    purpose: "叙事优先地转换为固定海洋视觉系统"
+    forbidden: "不得自动生成编号多版本"
+  - name: "generate-storyboard-variants"
+    command: "剧本多版本"
+    path: "skills/generate-storyboard-variants"
+    input: "一份TKDRAMA或相似结构的中文剧本.txt，以及正整数套数N"
+    output: "<原文件名>_1.txt至<原文件名>_N.txt"
+    purpose: "继承原风格，生成版本间差异且版本内连续的叙事等价剧本"
+    forbidden: "不得转换成特定风格，不得做图片相似度检测"
