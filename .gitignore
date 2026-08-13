@@ -1,0 +1,40 @@
+# Local production workspace (never commit)
+local/
+
+# Runtime caches and OS metadata
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Temporary transformation plans and scratch files
+.*-ocean-plan.json
+*.tmp
+*.temp
+*.bak
+*~
+
+# Video and audio source/output media
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+*.m4v
+*.mp3
+*.wav
+*.m4a
+*.aac
+*.flac
+
+# Extracted frames and generated raster outputs
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.gif
+*.tif
+*.tiff
+
+# Generated script conversions and reports
+*-海洋风转换.txt
+*-修改总结.md
