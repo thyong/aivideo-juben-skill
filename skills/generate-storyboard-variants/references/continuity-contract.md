@@ -48,7 +48,7 @@ Prefer high-impact differences:
 5. landscape, vegetation and distant landmarks;
 6. lighting fixture design and nonfunctional decoration.
 
-Tiny decorative swaps or simple hue changes are insufficient as the sole distinction. Do not clutter a scene to manufacture differences.
+Use these variables by replacement, not accumulation, and stay within the scene-detail budget in `scene-composition-contract.md`. Tiny decorative swaps or simple hue changes are insufficient as the sole distinction. Do not clutter a scene to manufacture differences.
 
 ## 5. Version DNA
 
@@ -59,8 +59,7 @@ Home: white weathered farmhouse
 Structure: rectangular white-grid windows
 Materials: pale oak + black iron
 Secondary palette: sage green + cream
-Recurring decor: ceramic lamps + white daisies
-Exterior: white fence + oak trees
+Exterior anchor: one mature oak
 ```
 
 Use mutually distinguishable combinations. Avoid combining arbitrary features that contradict the inherited style or characters' means.

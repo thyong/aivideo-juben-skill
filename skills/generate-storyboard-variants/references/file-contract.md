@@ -49,9 +49,9 @@ Create one UTF-8 JSON plan per output:
 
 Recognized fields: `描述`, `主体角色`, `镜头`, `光线`, `场景环境`, `画面风格`, `生成要求`.
 
-Normally change only `场景环境`; exceptionally change `光线` to resolve a direct environmental contradiction. Editing locked fields requires explicit user authorization.
+Normally change `场景环境`. This skill may also refine `镜头` for subject prominence, focal target, motion clearance and depth of field while preserving the original shot size, angle, camera direction and narrative framing purpose. Exceptionally change `光线` to resolve a direct environmental contradiction. Editing any other locked field requires explicit user authorization.
 
-When the user explicitly authorizes a normally locked field for the current task, declare the exact field in the plan so the application and validator can audit it:
+When this skill refines `镜头`, or when the user explicitly authorizes another normally locked field for the current task, declare the exact field in the plan so the application and validator can audit it:
 
 ```json
 {
@@ -60,7 +60,7 @@ When the user explicitly authorizes a normally locked field for the current task
 }
 ```
 
-Do not add `authorized_fields` based on inference. Its presence records task-specific permission and does not relax the default lock for other plans.
+Within this skill, `镜头` authorization covers only the four approved refinements above. Do not add any other `authorized_fields` based on inference. Its presence records scoped permission and does not relax the default lock for other plans.
 
 ## Commands
 
