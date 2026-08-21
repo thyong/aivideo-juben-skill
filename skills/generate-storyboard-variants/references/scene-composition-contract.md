@@ -17,7 +17,17 @@ Ask:
 
 If all answers are no, remove or replace it. A clothesline, random vase, distant shed, fence, tool rack or source-specific decoration is not continuity merely because it appeared in the source frame.
 
-## 2. Minimum narrative sufficiency
+## 2. Socioeconomic truth before aesthetics
+
+Infer living condition from the whole story, not one isolated prompt. Worn clothing, sparse or inexpensive furnishings, repaired materials, hard labor, scarcity and a later wealth payoff may collectively establish poverty even when it is never named.
+
+- Preserve a small, stable set of cues that makes the condition readable across the relevant story phase.
+- A cue may change form between versions only when its replacement communicates equivalent means; a simple worn wooden bed may become a simple repaired iron bed, not a premium designer bed.
+- Poverty does not require filth or chaotic clutter. Improve composition, lighting and color separation while retaining modest scale, age, repair, scarcity or low-cost material cues.
+- When evidence is ambiguous, preserve the source's socioeconomic signal instead of upgrading it.
+- Keep before/after wealth contrast explicit. Do not leak reward-stage materials or luxury architecture into earlier scenes.
+
+## 3. Minimum narrative sufficiency
 
 Build a scene from:
 
@@ -33,7 +43,7 @@ required location + action-supporting space/prop + at most one nonfunctional aes
 
 Simple means controlled, not empty. Never add detail merely to create depth, premium feeling, continuity or difference.
 
-## 3. Aesthetic-value rule
+## 4. Aesthetic-value rule
 
 Each shot should have a deliberate source of visual appeal without becoming complex. Suitable anchors depend on the inherited style and story, for example:
 
@@ -44,11 +54,11 @@ Each shot should have a deliberate source of visual appeal without becoming comp
 - glass and warm gold reflections in a jewelry scene;
 - a recognizable pool, villa or skyline in a wealth result.
 
-Prefer clean surfaces, controlled color contrast, readable shapes and bright-but-natural materials. Avoid large muddy brown, dull gray, peeling, broken, dirty or cluttered areas unless the plot explicitly requires them. A rural road can be a clean light-colored path; rural does not automatically mean ugly or distressed.
+Prefer controlled color contrast, readable shapes and bright-but-natural materials. Avoid large muddy brown, dull gray or cluttered areas unless full-story evidence makes age, wear, repair or deprivation part of the social narrative. When such evidence matters, compose those cues clearly rather than removing them. A rural road can be a clean light-colored path when poverty or hardship is not being communicated; rural does not automatically mean ugly or distressed.
 
 Do not improve beauty by falsifying socioeconomic status. A modest home may be clean, bright and well-composed without becoming luxurious. Reserve luxury, skyline, villa or premium retail cues for story-established upgrades.
 
-## 4. Subject dominance and framing refinement
+## 5. Subject dominance and framing refinement
 
 Preserve the source shot size, angle, camera direction and framing purpose. `镜头` may be refined only to state:
 
@@ -66,7 +76,7 @@ Use scale as a flexible guardrail, not a mechanical quota:
 
 When a percentage would create awkward cropping, state the visual hierarchy instead. Never force all scenery into the image; models often pull the camera back to fit every named element.
 
-## 5. Depth-of-field selection
+## 6. Depth-of-field selection
 
 Do not apply one depth-of-field phrase to every shot.
 
@@ -77,11 +87,11 @@ Do not apply one depth-of-field phrase to every shot.
 
 Background softness should separate the subject, not erase the location. Keep explicit source focus behavior when it is essential to the shot.
 
-## 6. Light and scene compatibility
+## 7. Light and scene compatibility
 
 Preserve established day/night, weather and light direction. Check that visible sources agree with the `光线` field: if the prompt says bedside lamp or pendant light is the source, retain one simple corresponding fixture when it is visible. Resolve contradictions with the smallest edit. Do not add LUTs, named cinematography styles or global color systems in this skill.
 
-## 7. Continuity at the right level
+## 8. Continuity at the right level
 
 Lock recurring structural attributes that viewers can notice:
 
@@ -89,11 +99,12 @@ Lock recurring structural attributes that viewers can notice:
 - bed, table, window and door design;
 - recurring bedding and main furniture color;
 - persistent functional props;
+- recurring socioeconomic cues and their story phase;
 - location upgrade state.
 
 Do not lock every lamp, flower, vase or distant tree. Micro-decoration is neither required continuity nor a useful way to differentiate versions.
 
-## 8. Final audit
+## 9. Final audit
 
 Before delivery, verify each shot:
 
@@ -104,4 +115,5 @@ Before delivery, verify each shot:
 5. Motion shots retain usable space.
 6. Depth of field matches the shot function.
 7. Recurring structures remain consistent.
-8. Payoff scenes still show the environmental upgrade.
+8. Poverty, ordinary life or wealth remains readable at the correct story phase.
+9. Payoff scenes still show the environmental upgrade.

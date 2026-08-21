@@ -31,8 +31,9 @@ Read all three before planning variants:
    - group shots by physical location and distinguish genuinely different locations;
    - track recurring furniture, architecture, vehicles, containers, clothing and props;
    - record material, color, shape, placement and temporal state;
+   - infer each story phase's socioeconomic condition from both explicit text and repeated indirect evidence, then lock the cues that communicate it;
    - mark every story-dependent attribute as locked.
-4. Audit every scene element. Keep narrative-functional elements, keep at most one high-value aesthetic anchor, and remove or replace source-video residue that has no story, location-recognition or composition value.
+4. Audit every scene element. Keep narrative-functional and socioeconomic-story elements, keep at most one high-value aesthetic anchor, and remove or replace source-video residue that has no story, location-recognition or composition value.
 5. Classify every shot as interaction/emotion, movement/action, spectacle/reveal or result/environment-upgrade. Use that classification to choose subject scale, focal target, motion clearance and depth of field.
 6. Separate source inconsistencies from intentional story changes. Normalize obvious prompt drift only when the full story establishes that shots share one unchanged location or entity.
 7. Design one coherent visual DNA for each requested version. Inherit the source's visual style; never introduce a named style that the source does not contain. Keep pre-reward socioeconomic conditions truthful and reserve upgrades for story-established results.
@@ -83,7 +84,7 @@ Never sacrifice items 1–6 to increase variety.
 - If an attribute is used by the story, lock it across all versions. Example: a metal bed involved in a metal-impact action must remain metal.
 - Do not add image similarity scoring, regeneration loops or claims about platform detection thresholds.
 - Do not invent reference images, seeds, weights, asset properties or production requirements.
-- Do not treat simple scenery as permission to make it dull, dirty, empty or aesthetically cheap. Do not upgrade a poor or ordinary household into luxury before the story earns that change.
+- Do not treat simple scenery as permission to make it dull, dirty, empty or aesthetically cheap. Do not upgrade or sanitize a poor or ordinary household before the story earns that change. Poverty may be composed attractively, but its narrative evidence must remain visible.
 
 ## Quality gate
 
@@ -99,5 +100,6 @@ Deliver only when:
 - each scene is minimally sufficient for the action and uses no more than one nonfunctional aesthetic anchor;
 - subjects and functional props remain visually dominant without losing required movement space;
 - depth of field matches shot function instead of being uniformly shallow or uniformly sharp;
+- inferred socioeconomic condition and any before/after wealth contrast remain visible and consistent;
 - reward, wealth or environment-upgrade shots retain enough background readability to communicate the payoff;
 - the original visual style and image-to-video conditions remain intact.

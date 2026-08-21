@@ -7,6 +7,7 @@ Never edit isolated shots first. Read the story and every storyboard prompt, the
 - a location table;
 - an entity/prop table;
 - a temporal sequence;
+- a socioeconomic phase sequence inferred from the full story;
 - a list of locked narrative facts;
 - one visual DNA per output version.
 
@@ -21,6 +22,8 @@ Classify each candidate attribute:
 - **SHOT-SAFE**: nonrecurring background detail with no story or continuity consequence.
 
 When uncertain, choose LOCK.
+
+Social condition does not need to be stated directly. Repeated worn clothing, low-cost furnishings, repaired surfaces, scarcity, hard labor, inability to purchase necessities, and a later wealth upgrade can jointly establish poverty or financial struggle. Treat that combined meaning as locked even when no single shot says “poor.”
 
 Example: if a bed is merely environmental, V1 may use an iron bed and V2 a wooden bed. Within V1, every recurrence must use the same iron design, finish, bedding and relevant placement. If a later action depends on striking or gripping metal, material becomes LOCK across all versions.
 
