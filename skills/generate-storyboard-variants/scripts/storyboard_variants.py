@@ -109,19 +109,26 @@ def load_plan(path: Path) -> dict:
     data = json.loads(path.read_text(encoding="utf-8-sig"))
     if not isinstance(data.get("shots"), dict):
         raise ValueError("Plan must contain an object named 'shots'")
+    authorized_fields = data.get("authorized_fields", [])
+    if not isinstance(authorized_fields, list) or not all(isinstance(field, str) for field in authorized_fields):
+        raise ValueError("'authorized_fields' must be an array of field names when present")
+    unknown_authorized = set(authorized_fields) - set(FIELDS)
+    if unknown_authorized:
+        raise ValueError(f"Unknown authorized fields: {sorted(unknown_authorized)}")
+    allowed_fields = {"场景环境", "光线"} | set(authorized_fields)
     global_fields = data.get("global_fields", {})
     if not isinstance(global_fields, dict):
         raise ValueError("'global_fields' must be an object when present")
     unknown = set(global_fields) - set(FIELDS)
     if unknown:
         raise ValueError(f"Unknown global fields: {sorted(unknown)}")
-    forbidden = set(global_fields) - {"场景环境", "光线"}
+    forbidden = set(global_fields) - allowed_fields
     if forbidden:
         raise ValueError(f"Variant plans cannot globally replace locked/style fields: {sorted(forbidden)}")
     for seq, item in data["shots"].items():
         if not isinstance(item, dict) or not isinstance(item.get("fields"), dict):
             raise ValueError(f"Shot {seq} must contain an object named 'fields'")
-        forbidden = set(item["fields"]) - {"场景环境", "光线"}
+        forbidden = set(item["fields"]) - allowed_fields
         if forbidden:
             raise ValueError(f"Shot {seq} attempts to replace locked/style fields: {sorted(forbidden)}")
     return data

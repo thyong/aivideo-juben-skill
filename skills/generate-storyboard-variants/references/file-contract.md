@@ -51,6 +51,17 @@ Recognized fields: `描述`, `主体角色`, `镜头`, `光线`, `场景环境`,
 
 Normally change only `场景环境`; exceptionally change `光线` to resolve a direct environmental contradiction. Editing locked fields requires explicit user authorization.
 
+When the user explicitly authorizes a normally locked field for the current task, declare the exact field in the plan so the application and validator can audit it:
+
+```json
+{
+  "authorized_fields": ["镜头"],
+  "shots": {}
+}
+```
+
+Do not add `authorized_fields` based on inference. Its presence records task-specific permission and does not relax the default lock for other plans.
+
 ## Commands
 
 ```bash
