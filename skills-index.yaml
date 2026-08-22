@@ -1,11 +1,11 @@
-version: 3
+version: 4
 skills:
   - name: "translate-ocean-video-prompts"
     command: "海洋风转换"
     path: "skills/translate-ocean-video-prompts"
     input: "一份TKDRAMA或相似结构的中文剧本.txt"
     output: "一份海洋风转换.txt与一份修改总结.md"
-    purpose: "叙事优先地转换为固定海洋视觉系统"
+    purpose: "叙事优先地转换为固定海洋视觉系统，并逐镜优化主体、焦点、景深、运动空间与连续性"
     forbidden: "不得自动生成编号多版本"
   - name: "generate-storyboard-variants"
     command: "剧本多版本"

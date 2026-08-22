@@ -26,6 +26,7 @@ Create UTF-8 JSON with this structure:
   "shots": {
     "8": {
       "fields": {
+        "镜头": "replacement preserving source size/angle/composition while adding focus set, depth, prominence, and motion space",
         "光线": "replacement without the 光线： prefix",
         "场景环境": "replacement without the 场景环境： prefix"
       },
@@ -42,7 +43,9 @@ Create UTF-8 JSON with this structure:
 
 Only use recognized image-prompt fields: `描述`, `主体角色`, `镜头`, `光线`, `场景环境`, `画面风格`, `生成要求`.
 
-Normally include only `光线`, `场景环境`, and `画面风格`. If a locked field must change, include it explicitly and explain why in `summary.reason`.
+Include a shot-specific `镜头` replacement for every shot. It must preserve the source shot size, angle, composition, placement, and movement direction while adding the focal plan, depth of field, subject prominence, background readability, and motion space. Do not copy one fixed camera suffix across all shots.
+
+Normally include `镜头`, any necessary `光线` or `场景环境`, and the global `画面风格`. If `描述` or `主体角色` must change to resolve a recurring-asset, temporal, or cause-and-effect contradiction, include the field explicitly and explain the exact reason in `summary.reason`.
 
 Use `global_fields` for a field that must be identical in every shot, especially the fixed `画面风格`. Shot-level fields override global fields only when explicitly present; do not override the fixed style per shot.
 

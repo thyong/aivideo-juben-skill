@@ -1,4 +1,4 @@
 interface:
   display_name: "海洋风格分镜转换"
-  short_description: "将TKDRAMA分镜提示词转换为统一海洋高端视觉风格"
-  default_prompt: "使用 $translate-ocean-video-prompts 转换这份TKDRAMA剧本文件，保持格式和叙事不变，并输出修改总结。"
+  short_description: "将TKDRAMA分镜统一为海洋高端视觉并逐镜优化景深与主体"
+  default_prompt: "使用 $translate-ocean-video-prompts 转换这份TKDRAMA剧本文件，保持叙事和格式不变，逐镜优化主体、焦点与景深，并输出修改总结。"
