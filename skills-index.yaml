@@ -1,16 +1,57 @@
-version: 4
+version: 8
 skills:
+  - name: "create-original-animal-storyboard"
+    display_name: "原创剧本"
+    command: "原创剧本"
+    aliases: ["原创故事", "原创分镜"]
+    status: "experimental"
+    path: "skills/create-original-animal-storyboard"
+    input: "可选题材、角色、风格与时长要求；无需原剧本"
+    required_inputs: []
+    output: "一份<title>-原创版-1-剧本.txt"
+    purpose: "创作全新动物人故事，并生成适配独立6秒图生视频、截取3至4秒后直接硬切的一分钟TKDRAMA分镜"
+    forbidden: "不得把现有故事换名词后冒充原创，不得按连续动作拆镜，不得自动执行海洋风转换或剧本多版本"
   - name: "translate-ocean-video-prompts"
+    display_name: "海洋风转换"
     command: "海洋风转换"
+    aliases: ["海洋系", "转换为海洋系", "海洋风改编"]
+    status: "production"
     path: "skills/translate-ocean-video-prompts"
     input: "一份TKDRAMA或相似结构的中文剧本.txt"
+    required_inputs: ["source_story_or_script"]
     output: "一份海洋风转换.txt与一份修改总结.md"
     purpose: "叙事优先地转换为固定海洋视觉系统，并逐镜优化主体、焦点、景深、运动空间与连续性"
     forbidden: "不得自动生成编号多版本"
   - name: "generate-storyboard-variants"
+    display_name: "剧本多版本"
     command: "剧本多版本"
+    aliases: ["多版本", "微二创", "矩阵号版本", "批量差异化分镜"]
+    status: "production"
     path: "skills/generate-storyboard-variants"
     input: "一份TKDRAMA或相似结构的中文剧本.txt，以及正整数套数N"
+    required_inputs: ["source_story_or_script", "variant_count"]
     output: "<原文件名>_1.txt至<原文件名>_N.txt"
-    purpose: "继承原风格，生成版本间差异且版本内连续的叙事等价剧本，并优化场景价值、主体焦点与景深"
+    purpose: "保持剧情、角色与核心动作不变，通过调整非核心视觉元素生成版本间差异，解决矩阵素材去重，并优化场景价值、主体焦点与景深"
     forbidden: "不得转换成特定风格，不得做图片相似度检测"
+  - name: "rewrite-storyboard"
+    display_name: "剧本二创"
+    command: "剧本二创"
+    aliases: ["故事二创", "剧情二创", "改编故事"]
+    status: "production"
+    path: "skills/rewrite-storyboard"
+    input: "一份故事或剧本，以及希望保留、调整或避免的内容"
+    required_inputs: ["source_story_or_script"]
+    output: "用户两次确认后生成一份<原文件名>-二创版-1.txt"
+    purpose: "通过角色功能、关键道具或部分事件改编实现剧情二创；先确认改编方向，再确认逐镜计划，最后生成完整剧本"
+    forbidden: "不得把方向选择当作生成授权，不得在逐镜计划确认前创建正式文件，不得用非核心视觉差异冒充剧情二创"
+  - name: "convert-to-animal-characters"
+    display_name: "动物人角色转换"
+    command: "动物人转换"
+    aliases: ["转换角色", "改成动物人", "角色动物化"]
+    status: "production"
+    path: "skills/convert-to-animal-characters"
+    input: "一份TKDRAMA或相似结构的中文剧本.txt，以及可选的动物IP角色映射"
+    required_inputs: ["source_story_or_script"]
+    output: "用户确认角色映射后生成一份<原文件名>-动物人版-1.txt"
+    purpose: "保留原剧情、分镜事件和视觉强度，仅将现有角色体系映射为动物人角色"
+    forbidden: "不得预设或枚举来源角色类别，不得擅自修剧情、动作、武器、道具、结果、画面或时序"

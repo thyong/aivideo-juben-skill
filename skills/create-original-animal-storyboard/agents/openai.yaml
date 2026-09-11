@@ -1,0 +1,4 @@
+interface:
+  display_name: "原创动物人剧本"
+  short_description: "创作适配独立6秒图生视频与3至4秒硬切的原创一分钟分镜"
+  default_prompt: "使用 $create-original-animal-storyboard 创作一套全新的动物人TikTok故事，并输出可直接导入的TKDRAMA分镜文件。"

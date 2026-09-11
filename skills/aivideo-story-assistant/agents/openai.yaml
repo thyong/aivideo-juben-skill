@@ -1,0 +1,7 @@
+interface:
+  display_name: "AI 视频剧本助手"
+  short_description: "统一选择并引导执行剧本生产技能"
+  default_prompt: "使用 $aivideo-story-assistant 查看剧本技能并引导我完成任务。"
+
+policy:
+  allow_implicit_invocation: true

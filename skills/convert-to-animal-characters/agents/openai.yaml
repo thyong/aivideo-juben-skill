@@ -1,0 +1,4 @@
+interface:
+  display_name: "动物人角色转换"
+  short_description: "保留原剧情与分镜，只把现有角色体系映射为动物人角色"
+  default_prompt: "使用 $convert-to-animal-characters 将这份剧本的角色转换为动物人角色。"

@@ -1,0 +1,7 @@
+interface:
+  display_name: "剧本二创"
+  short_description: "两次确认后完成角色、道具与事件改编"
+  default_prompt: "使用 $rewrite-storyboard 对我提供的剧本进行可控二创。"
+
+policy:
+  allow_implicit_invocation: true
